@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <title>MENÚ EXPRESS</title>
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/clearform.js"></script>
         <script type="text/javascript">
             function cargar(div, desde)
             {
                 $(div).load(desde);
             }
-            
+        </script>
+        <script>
             $(function(){
                 var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
                 $('a[data-modal-id]').click(function(e) {
