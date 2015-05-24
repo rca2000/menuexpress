@@ -1,67 +1,72 @@
-*{
+* {
     margin:0px 0px 5px;
     padding:0;
 }
-body{
+body {
     background:#FFEEC3;
     font-family: 'Lato', sans-serif;
 }
-footer{
+footer {
     border-top:1px solid #54671E;
     margin-top:20px;
     padding:20px 0;
 }
-footer ul{
+footer ul {
     font-size:12px;
     list-style:none;
     margin:auto;
     overflow:hidden;
     width:960px;
 }
-footer ul li{
+footer ul li {
     float:left;
     margin-right:10px;
 }
-footer ul li a{
+footer ul li a {
     color:#54671E;
     text-decoration:none;
 }
-footer ul li a:hover{
+footer ul li a:hover {
     text-decoration:underline;
 }
-header{
+header {
     margin:auto;
     width:960px;
     background:url(../img/bg_menu.png) 0 0 repeat-x;
     border-radius: 5px;
 }
-.container{
+.container {
     margin:auto;
     width:960px;
 }
-.contReg{
+.contReg {
     background:#54671E;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius:5px;
     margin:auto;
     padding:10px;
     width:180px;
 }
-.menuPrin ul li{
+.menuPrin ul li {
     float:left;
     list-style:none;
     margin:40px 10px 10px;
 }
-.menuPrin ul li a{
+.menuPrin ul li a {
     color:#fff;
     text-decoration:none;
 }
-.menuPrin ul li a:hover{
+.menuPrin ul li a:hover {
     color:#54671E;
 }
-.menuPrin ul li.logo{
+.menuPrin ul li.logo {
     margin-top:0 !important;
 }
-.menuPrin ul{
+.menuPrin ul {
     margin:auto;
     width:793px;
     overflow:hidden;
@@ -69,89 +74,173 @@ header{
 .main{
     overflow:hidden;
 }
-.main .col1{
+
+/********/
+
+.main .col1 {
     background:#799839;
     border:1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius:5px;
     float:left;
     padding:20px;
     width:210px;
 }
-.main .col1 .busqueda label, input, select{
+.main .col1 .busqueda label, input, select {
     display:block;
 }
-.main .col1 .busqueda select{
+.main .col1 .busqueda select {
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius:5px;
     height:22px;
     width:180px;
 }
-.main .col1 label{
+.main .col1 label {
     font-size:12px
 }
-.main .col1 .busqueda{
+.main .col1 .busqueda {
     margin:auto;
     padding-bottom:20px;
     width:180px;
 }
-.main .col1 form label{
+.main .col1 form label {
     color:#fff;
     margin:5px 0;
 }
-.main .col1 form input[type="button"]{
+.main .col1 form input[type="button"] {
     cursor:pointer;
     margin: 6px auto;
     background: #F48329;
     border: 1px solid #D2640C;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius: 5px;
     color: #fff;
     width: 100px;
     height: 22px;
 }
-.main .col1 form input[type="button"]:hover{
+.main .col1 form input[type="button"]:hover {
     background:#D2640C;
 }
-.main .col1 form input[type="text"]{
+.main .col1 form input[type="text"] {
     background: #fff;
     border:0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius: 5px;
     padding:0 4px;
     width: 172px;
     height: 22px;
 }
-.main .col1 .registro h3{
+.main .col1 .registro h3 {
     color:#fff;
     font-size:14px;
     margin-left:24px;
 }
-.main .col2{
-    background:#fff;
-    border:1px solid #fff;
-    border-radius:5px;
-    float:right;
-    padding-top:20px;
-    width:700px;
-}
 
 /********/
 
-.main .col2 h1{
+.main .col2 {
+    background:#fff;
+    border:1px solid #fff;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    padding-top:20px;
+    float:left;
+    width:700px;
+}
+.main .col2 h1 {
     color:#54671E;
     margin:0 20px;
 }
-.main .col2 p{
+.main .col2 p {
     color:#333;
     font-size:14px;
     margin:0 20px;
     text-align:justify;
 }
+.main .col2 form label, input, select {
+    display:block;
+}
+.main .col2 form select {
+    border: 1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    height:22px;
+    width:180px;
+}
+.main .col2 form label {
+    color:#000000;
+    margin:5px 0;
+}
+.main .col2 form input[type="button"] {
+    cursor:pointer;
+    margin: 6px auto;
+    background: #F48329;
+    border: 1px solid #D2640C;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    height: 22px;
+}
+.main .col2 .contPedi form input[type="button"]:hover {
+    background:#D2640C;
+}
+.main .col2 form input[type="text"] {
+    background: #fff;
+    border:1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    padding:0 4px;
+    height: 22px;
+}
+
+/********/
+
 .camPed{
     margin:0 40px 20px 0;
     overflow:hidden;
 }
-.camPed input, .btnAcep, .btnCan{
+.camPed input, .btnAcep, .btnCan {
     float:right;
     background:#F48329;
     border:0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius:5px;
     color:#fff;
     cursor:pointer;
@@ -160,42 +249,42 @@ header{
     text-align:center;
     width:120px;
 }
-.camPed input:hover, .btnAcep:hover, .btnCan:hover{
+.camPed input:hover, .btnAcep:hover, .btnCan:hover {
     background:#D2640C;
 }
-.clear{
+.clear {
     clear:both;
 }
-.contFood{
+.contFood {
     
 }
-.contBloq{
+.contBloq {
     border-bottom:1px solid #FFEEC3;
     overflow:hidden;
 }
-.contBloq .food{
+.contBloq .food {
     float:left;
     margin:16px 24px;
     width:43%;
 }
-.contBloq .food div{
+.contBloq .food div {
     border:10px solid #F48329;
 }
 .contBloq .food p{
     margin:10px 0 0;
     overflow:hidden;
 }
-.contBloq .food p .tex1{
+.contBloq .food p .tex1 {
     color:#799839;
     float:left;
     font-weight:bold;
 }
-.contBloq .food p .tex2{
+.contBloq .food p .tex2 {
     color:#F48329;
     float:right;
     font-weight:bold;
 }
-.contBloq .imgRest{
+.contBloq .imgRest {
     border:10px solid #F48329;
     float:left;
     margin:20px 0 20px 20px;
@@ -207,31 +296,36 @@ header{
     margin:0 0 20px 20px;
     width:12%;
 }
-.contBloq .detaRest{
+.contBloq .detaRest {
     float:left;
     height:170px;
     margin:20px 0 0 20px;
     position:relative;
     width:68%;
 }
-.contBloq .detaRest h2{
+.contBloq .detaRest h2 {
     color:#799839;
     margin-bottom:10px;
 }
-.contBloq .detaRest h2 a{
+.contBloq .detaRest h2 a {
     color:#799839;
     text-decoration:none;
 }
-.contBloq .detaRest h2 a:hover{
+.contBloq .detaRest h2 a:hover {
     color:#54671E;
 }
-.contBloq .detaRest p{
+.contBloq .detaRest p {
     color:#333;
     font-size:14px;
     margin:0 0 5px 0;
 }
-.contBloq .detaRest .verMenu{
+.contBloq .detaRest .verMenu {
     background:#F48329;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
     border-radius:5px;
     bottom:0;
     color:#fff;
@@ -244,17 +338,17 @@ header{
     text-decoration:none;
     width:100px;
 }
-.contBloq .detaRest .verMenu:hover{
+.contBloq .detaRest .verMenu:hover {
     background:#D2640C;
 }
-.contPedi{
+.contPedi {
     margin:0 20px;
 }
-.noBBH{
+.noBBH {
     height:auto !important;
     margin-top:0 !important;
 }
-.noBorBot{
+.noBorBot {
     border-bottom:0;
 }
 .noMarTop{
@@ -268,20 +362,20 @@ header{
     margin-bottom:8px;
     overflow:hidden;
 }
-.nomLis li input[type="checkbox"]{
+.nomLis li input[type="checkbox"] {
     float:left;
 }
-.nomLis li span{
+.nomLis li span {
     float:left;
     font-size:14px;
     line-height:12px;
     margin-left:6px;
 }
-.nomMenu{
+.nomMenu {
     color:#54671E;
     text-align:center;
 }
-.nomPla{
+.nomPla {
     color:#799839 !important;
     font-size:16px !important;
     font-weight:bold;
@@ -291,34 +385,309 @@ header{
     margin-top:10px;
     text-align:center;
 }
-.nomHist{
+.nomHist {
     color:#799839;
     font-size:16px;
     font-weight:bold;
     margin:10px 0;
     border-bottom:1px solid #748A37;
 }
-.lisAd{
+.lisAd {
     margin:10px 0;
     padding-left:40px;
 }
-.lisAd li{
+.lisAd li {
     margin-bottom:10px;
 }
 .lisAd li a{
     color:#D2640C;
     text-decoration:none;
 }
-.lisAd li a:hover{
+.lisAd li a:hover {
     text-decoration:underline;
 }
-.conPerfil{
+.conPerfil {
     margin:auto;
     overflow:hidden;
     width:960px;
 }
-.conPerfil a{
+.conPerfil a {
     color:#fff;
     float:right;
     text-decoration:none;
+}
+.regUsu {
+    margin:0 20px;
+    background:#fff;
+    float:left;
+    width:400px;
+}
+.carFot {
+    background:#799839;
+    border:1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    float:right;
+    padding:20px;
+    width:175px;
+    margin: 10px 35px 0px 0px;
+}
+
+.divPed {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    margin: 0px;
+}
+.regPed {
+    margin:0 20px;
+    background:#fff;
+    width:400px;
+}
+.main .col2 .contPedi form .regPed input[type="text"] {
+    background: #fff;
+    border:1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    padding:0 4px;
+    width: 500px;
+    height: 22px;
+}
+.main .col2 .contPedi form .regPed select {
+    border: 1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    height:22px;
+    width:210px;
+}
+.main .col2 .contPedi form .regPed label {
+    color:#000000;
+    margin:5px 0;
+}
+.main .col2 .contPedi form .divPed input[type="button"] {
+    background: #F48329;
+    border: 0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+}
+.main .col2 form .regUsu input[type="text"] {
+    background: #fff;
+    border:1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    padding:0 4px;
+    width: 290px;
+    height: 22px;
+}
+.main .col2 form .regUsu select {
+    border: 1px solid #799839;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    height:22px;
+    width:200px;
+}
+.main .col2 form .regUsu label {
+    color:#000000;
+    margin:5px 0;
+}
+.main .col2 form .regUsu input[type="button"] {
+    background: #F48329;
+    border: 0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+}
+.main .col2 form .regUsu input[type="button"]:hover {
+    background:#D2640C;
+}
+
+.divDia {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: 0;
+    float: left;
+    width: 100%;
+}
+.main .col2 form .divDia input[type="button"] {
+    background: #F48329;
+    border: 0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 3px 10px;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+}
+.main .col2 form .divDia input[type="button"]:hover {
+    background:#D2640C;
+}
+.main .col2 form .carFot .nomUser input[type="button"] {
+    background: #F48329;
+    border: 0;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+}
+.main .col2 form .carFot .nomUser input[type="button"]:hover {
+    background:#D2640C;
+}
+.titDia { 
+  color: #54671E;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 10px;
+  border-bottom: 1px solid #748A37;
+}
+.txtDia { 
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 15px 15px;
+  text-align: justify;
+}
+
+/*Dialogo Modal*/
+.modal-box {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 350px;
+    background:#e8e8e8;
+    border: 1px solid #dadada;
+    border-bottom: 1px solid #aaa;
+	/*para Firefox*/
+	-moz-border-radius: 9px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 9px;
+	/*para Opera IE*/
+    border-radius: 9px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+}
+.modal-box header, .modal-box .modal-header {
+    padding: 1.25em 1.5em;
+    border-bottom: 1px solid #ddd;
+    background: #799839;
+    color: #FFFFFF;
+}
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 {
+    margin: 0;
+}
+.modal-box .modal-body {
+    padding: 2em 1.5em;
+}
+.modal-box footer,
+.modal-box .modal-footer {
+    padding: 15px 10px 15px 230px;
+    border-top: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.02);
+}
+.modal-overlay {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+a.close {
+    line-height: 1;
+    font-size: 1.5em;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    text-decoration: none;
+    color: #bbb;
+}
+a.close:hover {
+    color: #222;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    transition: color 1s ease;
+}
+/*********/
+.btnAhref {
+    background: #F48329;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.btnAhref:hover {
+    background:#D2640C;
 }

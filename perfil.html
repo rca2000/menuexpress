@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <title>MENÚ EXPRESS</title>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/clearform.js"></script>  
+        <script type="text/javascript">
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+            
+            $(function(){
+                var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
+                $('a[data-modal-id]').click(function(e) {
+            		e.preventDefault();
+                    $("body").append(appendthis);
+                    $(".modal-overlay").fadeTo(500, 0.7);
+                    //$(".js-modalbox").fadeIn(500);
+                	var modalBox = $(this).attr('data-modal-id');
+                	$('#'+modalBox).fadeIn($(this).data());
+                });  
+                	
+                $(".js-modal-close, .modal-overlay").click(function() {
+                    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+                        $(".modal-overlay").remove();
+                    });
+                });
+                
+                $(window).resize(function() {
+                    $(".modal-box").css({
+                        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+                        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+                    });
+                });
+                
+                $(window).resize();
+            });
+        </script>
     </head>
     <body>
-        <header>
-                <nav class="menuPrin">
-                    <ul>
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="acerca-de.html">ACERCA DE</a></li>
-                        <li class="logo"><a href="index.html"><img src="img/logo.png"></a></li>
-                        <li><a href="servicio.html">SERVICIO</a></a></li>
-                        <li><a href="contactenos.html">CONTACTENOS</a></a></li>
-                    </ul>
-                </nav>
-        </header>
         <div class="container">
             <div class="main">
                 <div class="col1">
@@ -137,13 +160,5 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acerca-de.html">Acerca de</a></li>
-                <li><a href="servicio.html">Servicio</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </footer>
     </body>
 </html>

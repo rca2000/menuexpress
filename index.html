@@ -5,6 +5,7 @@
         <title>MENÚ EXPRESS</title>
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/clearform.js"></script>
         <script type="text/javascript">
             function cargar(div, desde)
             {
@@ -16,7 +17,7 @@
         <header>
                 <nav class="menuPrin">
                     <div class="conPerfil">
-                        <a href="perfil.html" style="margin: 10px 40px 0px 0px">
+                        <a href="#" onclick="cargar('#cuerpo', 'perfil.html')" style="margin: 10px 40px 0px 0px">
                             >> Mi perfil
                         </a>
                     </div>
@@ -51,7 +52,7 @@
                         <label for="">CONTRASEÑA</label>
                         <input type="text" name="" value=""/>
                         <input type="button" value="Ingresar" name=""/>
-                        <input type="button" value="Registrate" name="" onclick="location.href = 'registro.html'"/>
+                        <input type="button" value="Registrate" name="" onclick="cargar('#cuerpo', 'registro-usuario.html')"/>
                         </div>
                     </form>
                 </div>
@@ -97,10 +98,10 @@
         </div>
         <footer>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acerca-de.html">Acerca de</a></li>
-                <li><a href="servicio.html">Servicio</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a href="#" onclick="cargar('#cuerpo', 'inicio.html')">Inicio</a></li>
+                <li><a href="#" onclick="cargar('#cuerpo', 'acerca-de.html')">Acerca de</a></li>
+                <li><a href="#" onclick="cargar('#cuerpo', 'servicio.html')">Servicio</a></a></li>
+                <li><a href="#" onclick="cargar('#cuerpo', 'contactenos.html')">Contáctenos</a></a></li>
             </ul>
         </footer>
     </body>
