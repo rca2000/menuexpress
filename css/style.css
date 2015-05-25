@@ -491,8 +491,12 @@ header {
     font-size: 14px;
     padding: 10px 0;
     text-align: center;
-    width: 120px;
-    height: 35px;
+    width: 105px;
+    height: 37px;
+    padding: 10px 30px;
+}
+.main .col2 .contPedi form .divPed input[type="button"]:hover {
+    background:#D2640C;
 }
 .main .col2 form .regUsu input[type="text"] {
     background: #fff;
@@ -563,10 +567,10 @@ header {
     color: #fff;
     cursor: pointer;
     font-size: 14px;
-    margin: 3px 10px;
     text-align: center;
-    width: 120px;
-    height: 35px;
+    width: 105px;
+    height: 37px;
+    padding: 10px 30px;
 }
 .main .col2 form .divDia input[type="button"]:hover {
     background:#D2640C;
@@ -672,6 +676,7 @@ a.close:hover {
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
+
 /*********/
 .btnAhref {
     background: #F48329;
@@ -690,4 +695,94 @@ a.close:hover {
 }
 .btnAhref:hover {
     background:#D2640C;
+}
+
+/***Menu***/
+.main .col2 nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:5px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9ACD32), to(#6B8E23));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #9ACD32, #6B8E23);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #9ACD32, #6B8E23);/*Para Opera*/
+    background-image: linear-gradient(top, #9ACD32, #6B8E23);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    /*width:950px;*/
+}
+.main .col2 nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:10px;
+}
+.main .col2 nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-size:16px;
+    font-weight:bold;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #CCCCFF;
+}
+.main .col2 nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8AB836), to( #8AB836));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #8AB836, #8AB836);/*Firefox*/
+    background-image: -o-linear-gradient(top, #8AB836, #8AB836);/*Opera*/
+    background-image: linear-gradient(top, #8AB836, #8AB836);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #8AB836;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #8AB836;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #8AB836;/*Opera*/
+    box-shadow:  1px -1px 0px #8AB836;/*Estandar por defecto*/
+    border:1px solid #009900;
+}
+.main .col2 nav ul li a{
+    color:#FFFFFF;
+    display:block;
+    padding:5px 15px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+.main .col2 nav ul li a:hover {
+    color:#E55F16;
+}
+
+/***Perfil***/
+.main .col2 .perfil {
+    background:#fff;
+    border:1px solid #fff;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius:5px;
+    padding-top:10px;
+    width:700px;
+}
+.perfil h2 {
+    color:#799839;
+    font-size:16px;
+    font-weight:bold;
+    margin:0px auto;
+    border-bottom:1px solid #748A37;
+}
+
+/***Calendario***/
+#calendar{
+    margin:25px auto;
+    width: 370px;
 }

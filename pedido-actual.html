@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>MENÚ EXPRESS</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/clearform.js"></script>  
+        <script type="text/javascript">
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+            
+            $(function(){
+                var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
+                $('a[data-modal-id]').click(function(e) {
+            		e.preventDefault();
+                    $("body").append(appendthis);
+                    $(".modal-overlay").fadeTo(500, 0.7);
+                    //$(".js-modalbox").fadeIn(500);
+                	var modalBox = $(this).attr('data-modal-id');
+                	$('#'+modalBox).fadeIn($(this).data());
+                });  
+                	
+                $(".js-modal-close, .modal-overlay").click(function() {
+                    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+                        $(".modal-overlay").remove();
+                    });
+                });
+                
+                $(window).resize(function() {
+                    $(".modal-box").css({
+                        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+                        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+                    });
+                });
+                
+                $(window).resize();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <div id="cuerpo">
+                    <div class="col2">
+                        <div id="perfil">
+                        <div class="contPedi">
+                            <h2 class="nomHist">Historial de pedidos</h2>
+                            <table width="100%">
+                                <tr>
+                                    <th height="40" style="background-color: #799839; color:#fff;">PEDIDO </th>
+                                    <th style="background-color: #799839; color:#fff;">CANTIDAD</th>
+                                    <th style="background-color: #799839; color:#fff;">PRECIO</th>
+                                    <tr>
+                                        <td height="30" style="background-color :#748A37; color:#fff;">Entrada</td>
+                                        <td style="background-color :#748A37; color:#fff;"></td>
+                                        <td style="background-color :#748A37; color:#fff;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color :#E1EACC; font-size:14px;">E1) Chicharrón de pollo c/yuquitas... </td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">1</td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">S/. 6.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color :#E1EACC; font-size:14px;">E2) Sopa de menestron </td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">1</td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">S/. 6.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color :#E1EACC; font-size:14px;">E3) Causa de pollo </td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">4</td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">S/. 6.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" style="background-color :#748A37; color:#fff;">Segundos</td>
+                                        <td style="background-color :#748A37; color:#fff;"></td>
+                                        <td style="background-color :#748A37; color:#fff;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color :#E1EACC; font-size:14px;">S1) Seco de res a la norteña c/frejoles</td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">1 </td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">S/. 8.50 </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color :#E1EACC; font-size:14px;">S2) Pollo dorado c/papas fritas y ensalada</td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">1 </td>
+                                        <td align="center" style="background-color :#E1EACC; font-size:14px;">S/. 8.50 </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" style="background-color :#748A37; color:#fff;">Total de entradas</td>
+                                        <td align="center" style="background-color :#748A37; color:#fff;">6</td>
+                                        <td style="background-color :#748A37; color:#fff;"> </td>
+                                    </tr>    
+                                    <tr>
+                                        <td height="30" style="background-color :#748A37; color:#fff;">Total de segundos</td>
+                                        <td align="center" style="background-color :#748A37; color:#fff;">6</td>
+                                        <td style="background-color :#748A37; color:#fff;"> </td>
+                                    </tr> 
+                                    <tr>
+                                        <td height="30" style="background-color :#748A37; color:#fff;">Total</td>
+                                        <td style="background-color :#748A37; color:#fff;"></td>
+                                        <td align="center" style="background-color :#748A37; color:#fff;">S/.19.00</td>
+                                    </tr> 
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

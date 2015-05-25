@@ -12,7 +12,7 @@
                 $(div).load(desde);
             }
         </script>
-        <script>
+        <script type="text/javascript">
             $(function(){
                 var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
                 $('a[data-modal-id]').click(function(e) {
@@ -138,12 +138,12 @@
                             <div class="divDia">
                                 <table width="40%" style="margin:auto;">
                                     <tr>
-                                        <td width="15%" align="right">
+                                        <td width="120px" height="35px" align="right">
                                             <a href="#" class="js-open-modal btnAhref" data-modal-id="dialogo">Grabar</a>
                                         </td>
                                         <td width="10%"> </td>
-                                        <td width="15%">
-                                            <a href="#" class="btnAhref" onclick="clearForm(this.form);">Limpiar</a>
+                                        <td width="120px" height="35px" align="right">
+                                            <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
                                         </td>
                                     </tr>
                                     <tr height="20">
