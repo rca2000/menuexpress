@@ -8,34 +8,34 @@
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/clearform.js"></script>  
         <script type="text/javascript" src="js/jquery-ui-datepicker.min.js"></script>
+<style type="text/css">
+#calendar{
+    margin:25px auto;
+    width: 370px;
+}
+</style>
     </head>
     <body>
         <header>
                 <nav class="menuPrin">
+                    <div class="conPerfil">
+                        <a href="#" onclick="cargar('#cuerpo', 'perfil.html')" style="margin: 10px 40px 0px 0px">
+                            >> Mi perfil
+                        </a>
+                    </div>
                     <ul>
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="acerca-de.html">ACERCA DE</a></li>
-                        <li class="logo"><a href="index.html"><img src="img/logo.png"></a></li>
-                        <li><a href="servicio.html">SERVICIO</a></a></li>
-                        <li><a href="contactenos.html">CONTACTENOS</a></a></li>
+                        <li><a href="#" onclick="cargar('#cuerpo', 'inicio.html')">INICIO</a></li>
+                        <li><a href="#" onclick="cargar('#cuerpo', 'acerca-de.html')">ACERCA DE</a></li>
+                        <li class="logo"><a href="#" onclick="cargar('#cuerpo', 'inicio.html')"><img src="img/logo.png"></a></li>
+                        <li><a href="#" onclick="cargar('#cuerpo', 'servicio.html')">SERVICIO</a></a></li>
+                        <li><a href="#" onclick="cargar('#cuerpo', 'contactenos.html')">CONTACTENOS</a></a></li>
                     </ul>
                 </nav>
         </header>
         <div class="container">
             <div class="main">
-                <div class="col1">
-<div id="calendar"></div>
-                </div>
                 <div class="col2">
-                    <h1>Panel de control</h1>
-                    <ul class="lisAd">
-                        <li><a href="admin-local.html">Administrar locales</a></li>
-                        <li><a href="registro-menu.html">Registro de menú</a></li>
-                        <li><a href="pedido-dia.html">Pedidos del día</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div id="calendar"></div>
 <script>
 	$('#calendar').datepicker({
 		inline: true,
@@ -44,6 +44,10 @@
 		dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 	});
 </script>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <ul>
                 <li><a href="index.html">Inicio</a></li>

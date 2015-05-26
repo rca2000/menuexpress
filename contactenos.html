@@ -18,8 +18,73 @@
             <div class="main">
                 <div id="cuerpo">
                     <div class="col2">
-                        <h1>Contáctenos</h1>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p><br><br><br><br><br><br><br><br><br>
+                        <div style="width:635px;margin:0 auto;">
+                            <h1 style="margin:0px 0px 10px;">Contáctenos</h1>
+                        </div>
+                        <div id="dialogo" class="modal-box">
+                            <header style="width:303px;">
+                                <a href="#" class="js-modal-close close">×</a>
+                                <h3>Mensaje</h3>
+                            </header>
+                            <div class="modal-body">
+                                <p>Mensaje enviado.</p>
+                            </div>
+                            <footer><a href="#" class="js-modal-close btnAhref">Cerrar</a></footer>
+                        </div>
+                        <form>
+                            <div class="regCon">
+                                <table width="100%" cellspacing="15">
+                                    <tr>
+                                        <td width="15%">
+                                            <label for="">Nombre</label>
+                                        </td>     
+                                        <td width="85%">
+                                            <input size="65" type="text" name="" value=""/>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Correo</label>
+                                        </td>     
+                                        <td>
+                                            <input size="65"  type="text" name="" value=""/>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Teléfono</label>
+                                        </td>     
+                                        <td>
+                                            <input size="30" type="text" name="" value=""/>
+                                        </td> 
+                                    </tr>
+                                    <tr style="vertical-align:top;">
+                                        <td>
+                                            <label for="">Mensaje</label>
+                                        </td>     
+                                        <td>
+                                            <textarea cols="15" rows="5"></textarea>
+                                        </td> 
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="divDia">
+                                <table width="40%" style="margin:auto;">
+                                    <tr>
+                                        <td width="120px" height="35px" align="right">
+                                            <a href="#" class="js-open-modal btnAhref" data-modal-id="dialogo">Enviar</a>
+                                        </td>
+                                        <td width="10%"> </td>
+                                        <td width="120px" height="35px" align="right">
+                                            <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
+                                        </td>
+                                    </tr>
+                                    <tr height="20">
+                                        <td> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
