@@ -775,13 +775,7 @@ a.close:hover {
     padding-top:10px;
     width:660px;
 }
-.perfil h2 {
-    color:#799839;
-    font-size:16px;
-    font-weight:bold;
-    margin:0px auto;
-    border-bottom:1px solid #748A37;
-}
+
 .tabs {
     position: relative;
 	margin: 20px auto;
@@ -799,8 +793,11 @@ a.close:hover {
     filter: alpha(opacity=0);
 	cursor: pointer;
 }
+.tabs input#tab-2{
+	left: 165px;
+}
 .tabs input#tab-3{
-	left: 1700px;
+	left: 335px;
 }
 .tabs label {
 	background: #5ba4a4;
@@ -814,7 +811,7 @@ a.close:hover {
 	line-height: 40px;
 	height: 40px;
 	position: relative;
-	padding: 0 20px;
+	padding: 0px;
     float: left;
 	display: block;
 	width: 170px;
@@ -958,21 +955,7 @@ a.close:hover {
     -ms-transition: all ease-out 0.2s 0.2s;
     transition: all ease-out 0.2s 0.2s;
 }
-.perfil div h2, 
-.perfil div h3{
-	color: #398080;
-}
-.perfil div p {
-	font-size: 14px;
-	line-height: 22px;
-	font-style: italic;
-	text-align: left;
-	margin: 0;
-	color: #777;
-	padding-left: 15px;
-	font-family: Cambria, Georgia, serif;
-	border-left: 8px solid rgba(63,148,148, 0.1);
-}
+
 
 /***Contáctenos***/
 .regUsu {

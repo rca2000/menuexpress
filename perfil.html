@@ -46,39 +46,135 @@
                 <div id="cuerpo">
                     <div class="col2">
                         <h1 style="margin:0 20px 10px;">Hola {Nombre}</h1>
-			<section class="tabs">
-	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-		        <label for="tab-1" class="tab-label-1">Datos Generales</label>
-		
-	            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-		        <label for="tab-2" class="tab-label-2">Pedido del Día</label>
-		
-	            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-		        <label for="tab-3" class="tab-label-3">Historial Pedidos</label>
-            
-			    <div class="clear-shadow"></div>
-			
-		        <div class="perfil">
-			        <div class="perfil-1">
-						<h2>About us</h2>
-                        <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
-						<h3>How we work</h3>
-						<p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
-				    </div>
-			        <div class="perfil-2">
-						<h2>Services</h2>
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
-						<h3>Excellence</h3>
-						<p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
-				    </div>
-			        <div class="perfil-3">
-						<h2>Portfolio</h2>
-                        <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
-						<h3>Examples</h3>
-						<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
-				    </div>
-		        </div>
-			</section>
+            			<section class="tabs">
+            	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+            		        <label for="tab-1" class="tab-label-1">Datos Generales</label>
+            	            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+            		        <label for="tab-2" class="tab-label-2">Pedido del Día</label>
+            	            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+            		        <label for="tab-3" class="tab-label-3">Historial Pedidos</label>
+            			    <div class="clear-shadow"></div>
+            		        <div class="perfil">
+            			        <div class="perfil-1">
+
+
+                            <div style="width:575px;margin:0 auto;">
+                                <h2 class="nomHist">Datos Generales</h2>
+                            </div>
+                            <div id="dialogo" class="modal-box">
+                                <header style="width:303px;">
+                                    <a href="#" class="js-modal-close close">×</a>
+                                    <h3>Bienvenido</h3>
+                                </header>
+                                <div class="modal-body">
+                                    <p>Gracias por registrarse en nuestra página web Menú Express.</p>
+                                </div>
+                                <footer><a href="#" class="js-modal-close btnAhref">Cerrar</a></footer>
+                            </div>
+                            <form>
+                                <div class="carFot">
+                                    <div>
+                                        <a href="#">
+                                            <img src="img/avatar.jpg" width="100%">
+                                        </a>
+                                    </div>
+                                    <div class="nomUser">
+                                        <input type="button" name="" value="Cargar Foto"/>
+                                    </div>
+                                </div>
+                                <div class="regUsu">
+                                    <table width="100%" cellspacing="15">
+                                        <tr>
+                                            <td width="15%">
+                                                <label for="">Nombre</label>
+                                            </td>     
+                                            <td width="85%">
+                                                <input size="30" type="text" name="" value=""/>
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td width="15%">
+                                                <label for="">Usuario</label>
+                                            </td>     
+                                            <td width="85%">
+                                                <input size="30" type="text" name="" value=""/>
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="">Correo</label>
+                                            </td>     
+                                            <td>
+                                                <input size="30"  type="text" name="" value=""/>
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="">Dirección</label>
+                                            </td>     
+                                            <td>
+                                                <input size="30" type="text" name="" value=""/>
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="">Distrito</label>
+                                            </td>     
+                                            <td>
+                                                <select>
+                                                    <option select>Selecciona distrito</option>
+                                                    <option>San Isidro</option>
+                                                    <option>La Victoria</option>
+                                                </select>
+                                            </td>     
+                                        </tr>
+                                        <tr>
+                                            <td width="15%">
+                                                <label for="">Contraseña</label>
+                                            </td>     
+                                            <td width="85%">
+                                                <input size="30" type="text" name="" value="" style="width:200px;"/>
+                                            </td> 
+                                        </tr>
+                                        <tr>
+                                            <td width="15%">
+                                                <label for="">Confirmar contraseña</label>
+                                            </td>     
+                                            <td width="85%">
+                                                <input size="30" type="text" name="" value="" style="width:200px;"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="divDia">
+                                    <table width="40%" style="margin:auto;">
+                                        <tr>
+                                            <td width="120px" height="35px" align="right">
+                                                <a href="#" class="js-open-modal btnAhref" data-modal-id="dialogo">Grabar</a>
+                                            </td>
+                                            <td width="10%"> </td>
+                                            <td width="120px" height="35px" align="right">
+                                                <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
+                                            </td>
+                                        </tr>
+                                        <tr height="20">
+                                            <td> </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+
+
+            				    </div>
+            			        <div class="perfil-2">
+            						<h2>Services</h2>
+            				    </div>
+            			        <div class="perfil-3">
+            						<h2>Portfolio</h2>
+            				    </div>
+            		        </div>
+            			</section>
                     </div>
                 </div>
             </div>
