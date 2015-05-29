@@ -41,9 +41,6 @@
         </script>
     </head>
     <body>
-        <div class="container">
-            <div class="main">
-                <div id="cuerpo">
                     <div class="col2">
                         <h1 style="margin:0 20px 10px;">Hola {Nombre}</h1>
             			<section class="tabs">
@@ -56,89 +53,111 @@
             			    <div class="clear-shadow"></div>
             		        <div class="perfil">
             			        <div class="perfil-1">
-                                    <h2>Datos Generales</h2>
+                                    <div class="divPerH2">
+                                        <h2 class="perRegH2">Datos Generales</h2>
+                                    </div>
                                     <div id="dialogo" class="modal-box">
                                         <header style="width:303px;">
                                             <a href="#" class="js-modal-close close">×</a>
-                                            <h3>Mensaje</h3>
+                                            <h3>Bienvenido</h3>
                                         </header>
                                         <div class="modal-body">
-                                            <p>Grabación exitosa.</p>
+                                            <p>Gracias por registrarse en nuestra página web Menú Express.</p>
                                         </div>
                                         <footer><a href="#" class="js-modal-close btnAhref">Cerrar</a></footer>
                                     </div>
-
-
-                            <form>
-                                    <img class="fotUser" src="img/avatar.jpg" width="100%">
-                                    <input type="button" name="" value="Cargar Foto"/>
-                                    
-                                    <table width="100%" cellspacing="15">
-                                        <tr>
-                                            <td width="15%">
-                                                <label for="">Nombre</label>
-                                            </td>     
-                                            <td width="85%">
-                                                <input size="30" type="text" name="" value=""/>
-                                            </td> 
-                                        </tr>
-                                        <tr>
-                                            <td width="15%">
-                                                <label for="">Usuario</label>
-                                            </td>     
-                                            <td width="85%">
-                                                <input size="30" type="text" name="" value=""/>
-                                            </td> 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label for="">Correo</label>
-                                            </td>     
-                                            <td>
-                                                <input size="30"  type="text" name="" value=""/>
-                                            </td> 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label for="">Dirección</label>
-                                            </td>     
-                                            <td>
-                                                <input size="30" type="text" name="" value=""/>
-                                            </td> 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label for="">Distrito</label>
-                                            </td>     
-                                            <td>
-                                                <select>
-                                                    <option select>Selecciona distrito</option>
-                                                    <option>San Isidro</option>
-                                                    <option>La Victoria</option>
-                                                </select>
-                                            </td>     
-                                        </tr>
-                                        <tr>
-                                            <td width="15%">
-                                                <label for="">Contraseña</label>
-                                            </td>     
-                                            <td width="85%">
-                                                <input size="30" type="text" name="" value="" style="width:200px;"/>
-                                            </td> 
-                                        </tr>
-                                        <tr>
-                                            <td width="15%">
-                                                <label for="">Confirmar contraseña</label>
-                                            </td>     
-                                            <td width="85%">
-                                                <input size="30" type="text" name="" value="" style="width:200px;"/>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                            </form>
-
-
+                                    <form>
+                                        <div class="perCarFot">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="img/avatar.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="nomUser">
+                                                <input type="button" name="" value="Cargar Foto"/>
+                                            </div>
+                                        </div>
+                                        <div class="perRegUsu">
+                                            <table width="100%" cellspacing="15">
+                                                <tr>
+                                                    <td width="15%">
+                                                        <label for="">Nombre</label>
+                                                    </td>     
+                                                    <td width="85%">
+                                                        <input size="30" type="text" name="" value=""/>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td width="15%">
+                                                        <label for="">Usuario</label>
+                                                    </td>     
+                                                    <td width="85%">
+                                                        <input size="30" type="text" name="" value=""/>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="">Correo</label>
+                                                    </td>     
+                                                    <td>
+                                                        <input size="30"  type="text" name="" value=""/>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="">Dirección</label>
+                                                    </td>     
+                                                    <td>
+                                                        <input size="30" type="text" name="" value=""/>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="">Distrito</label>
+                                                    </td>     
+                                                    <td>
+                                                        <select>
+                                                            <option select>Selecciona distrito</option>
+                                                            <option>San Isidro</option>
+                                                            <option>La Victoria</option>
+                                                        </select>
+                                                    </td>     
+                                                </tr>
+                                                <tr>
+                                                    <td width="15%">
+                                                        <label for="">Contraseña</label>
+                                                    </td>     
+                                                    <td width="85%">
+                                                        <input size="30" type="text" name="" value="" style="width:200px;"/>
+                                                    </td> 
+                                                </tr>
+                                                <tr>
+                                                    <td width="15%">
+                                                        <label for="">Confirmar contraseña</label>
+                                                    </td>     
+                                                    <td width="85%">
+                                                        <input size="30" type="text" name="" value="" style="width:200px;"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="divDia">
+                                            <table width="40%" style="margin:auto;">
+                                                <tr>
+                                                    <td width="120px" height="35px" align="right">
+                                                        <a href="#" class="js-open-modal btnAhref" data-modal-id="dialogo">Grabar</a>
+                                                    </td>
+                                                    <td width="10%"> </td>
+                                                    <td width="120px" height="35px" align="right">
+                                                        <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
+                                                    </td>
+                                                </tr>
+                                                <tr height="20">
+                                                    <td> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </form>
             				    </div>
             			        <div class="perfil-2">
             						<h2>Services</h2>
@@ -149,8 +168,5 @@
             		        </div>
             			</section>
                     </div>
-                </div>
-            </div>
-        </div>
     </body>
 </html>

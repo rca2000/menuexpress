@@ -711,8 +711,8 @@ a.close:hover {
     border-radius:5px;
     padding-top:10px;
     width:660px;
+    height:500px;
 }
-
 .tabs {
     position: relative;
 	margin: 20px auto;
@@ -863,7 +863,10 @@ a.close:hover {
     box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
     border-radius: 0 3px 3px 3px;
 }
-.perfil div {
+.tabs .perfil .perfil-1,
+.tabs .perfil .perfil-2,
+.tabs .perfil .perfil-3,
+.tabs .perfil .perfil-4  {
     position: absolute;
 	top: 0;
 	left: 0;
@@ -893,13 +896,18 @@ a.close:hover {
     -ms-transition: all ease-out 0.2s 0.2s;
     transition: all ease-out 0.2s 0.2s;
 }
-.perfil-1 h2 {
-    color:#799839;
-    font-size:16px;
-    font-weight:bold;
-    margin:10px 0;
+.perfil div .divPerH2 {
+  color: #799839;
+  margin: 10px 0;
 }
-.perfil-1 form .fotUser {
+.perfil div .divPerH2 .perRegH2 {
+  color: #799839;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+  border-bottom: 1px solid #748A37;
+}
+.perCarFot {
     background:#799839;
     border:1px solid #799839;
 	/*para Firefox*/
@@ -908,33 +916,22 @@ a.close:hover {
 	-webkit-border-radius: 5px;
 	/*para Opera IE*/
     border-radius:5px;
+    float:right;
+    padding:20px;
     width:175px;
-    height:183px;
-    float: right;
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
 }
-.main .col2 section .perfil .perfil-1 form input[type="button"] {
-    background: #F48329;
-    border: 0;
-	/*para Firefox*/
-	-moz-border-radius: 5px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 5px;
-	/*para Opera IE*/
-    border-radius:5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 10px 0;
-    text-align: center;
-    width: 120px;
-    height: 35px;
-    float: right;
-    margin: 0px;
+.perRegUsu {
+    margin:0px;
+    background:#fff;
+    float: left;
+    width: 360px;
 }
-.main .col2 section .perfil .perfil-1 form input[type="button"]:hover {
-    background:#D2640C;
-}
+
+
+
+
+
 
 /***Contáctenos***/
 .regUsu {
