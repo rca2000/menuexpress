@@ -1,54 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>MENÚ EXPRESS</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/clearform.js"></script>
-        <script type="text/javascript">
-            function cargar(div, desde)
-            {
-                $(div).load(desde);
-            }
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="main">
-                <div id="cuerpo">
-                    <div class="col2">
-                        <div class="contBloq noBorBot">
-                            <div class="imgRestM"><img src="img/rest1.jpg" alt="" width="100%"></div>
-                            <div class="detaRest noBBH">
-                                <h2>Nombre del local</h2>
-                                <p>Dirección</p>
-                                <p>Teléfono</p>
-                                <p>Correo electrónico</p>
-                            </div>
-                            <div class="clear"></div>
-                        
-                            <h4 class="nomMenu">Lunes 20/05/2015<br>Menú Delivery: S/. 13.00</h4>
-                            <p class="nomPla">Entradas: S/. 6.00</p>
-                            <ul class="nomLis">
-                                <li><input type="checkbox" name=mybox value="1" ><span>E1) Chicharron de pollo con yuquitas</span></li>
-                                <li><input type="checkbox" name=mybox value="2" ><span>E2) Sopa de menestrón</span></li>
-                                <li><input type="checkbox" name=mybox value="3" checked><span>E3) Causa de pollo</span></li>
-                                <li><input type="checkbox" name=mybox value="4" ><span>E4) Tequeños c/guacamole</span></li>
-                            </ul>
-                            <p class="nomPla">Segundos: S/. 8.50</p>
-                            <ul class="nomLis">
-                                <li><input type="checkbox" name=mybox value="1" ><span>S1) Seco de res a la norteña</span></li>
-                                <li><input type="checkbox" name=mybox value="2" ><span>S2) Pollo dorado c/papas fritas y ensaladas</span></li>
-                                <li><input type="checkbox" name=mybox value="3" checked><span>S3) Carapulcra de pollo</span></li>
-                                <li><input type="checkbox" name=mybox value="4" ><span>S4) Lomo saltado con fetuccini</span></li>
-                            </ul>
-                            <p class="nomPla">Refresco: S/. 1.50</p>
-                            <div class="camPed"><input type="button" value="Realizar pedido" onclick="cargar('#cuerpo', 'pedido.html')"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<h1 style="margin:0px 20px 10px;">Menú del Día</h1>
+<hr>
+<div class="bloque noborde" style="margin: 15px 50px 10px 50px;">
+    <div class="imagenrestaurant"><img src="img/rest1.jpg" alt="" width="100%"></div>
+    <div class="detallerestaurant noBBH">
+        <h2 style="height: 25px">Nombre del local</h2>
+        <p>Dirección</p>
+        <p>Teléfono</p>
+        <p>Correo electrónico</p>
+    </div>
+    <div class="clear"></div>
+    <h3 class="titulomenu">Lunes 20/05/2015<br>Menú Delivery: S/. 13.00</h3>
+    <h4 style="height: 5px;">Entradas: S/. 6.00</h4>
+    <ul class="listaplato">
+        <li><input type="checkbox" name=mybox value="1" ><span>E1) Chicharron de pollo con yuquitas</span></li>
+        <li><input type="checkbox" name=mybox value="2" ><span>E2) Sopa de menestrón</span></li>
+        <li><input type="checkbox" name=mybox value="3" checked><span>E3) Causa de pollo</span></li>
+        <li><input type="checkbox" name=mybox value="4" ><span>E4) Tequeños c/guacamole</span></li>
+    </ul>
+    <h4 style="height: 5px;">Segundos: S/. 8.50</h4>
+    <ul class="listaplato">
+        <li><input type="checkbox" name=mybox value="1" ><span>S1) Seco de res a la norteña</span></li>
+        <li><input type="checkbox" name=mybox value="2" ><span>S2) Pollo dorado c/papas fritas y ensaladas</span></li>
+        <li><input type="checkbox" name=mybox value="3" checked><span>S3) Carapulcra de pollo</span></li>
+        <li><input type="checkbox" name=mybox value="4" ><span>S4) Lomo saltado con fetuccini</span></li>
+    </ul>
+    <h4 style="height: 5px;">Refresco: S/. 1.50</h4>
+    <div style="text-align: right;">
+        <input type="button" style="width: 120px;" value="Realizar Pedido" onclick="cargar('#cuerpo', 'pedido.html')">
+    </div>
+</div>
