@@ -1,39 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>MENÚ EXPRESS</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/clearform.js"></script>
-        <script type="text/javascript">
-            function cargar(div, desde)
-            {
-                $(div).load(desde);
-            }
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="main">
-                <div id="cuerpo">
-                    <div class="col2">
-                        <div style="width:635px;margin:0 auto;">
-                            <h1 style="margin:0px;">Registro</h1>
-                            <h2 class="nomHist">Datos personales</h2>
-                        </div>
-                        <div id="dialogo" class="modal-box">
-                            <header style="width:303px;">
-                                <a href="#" class="js-modal-close close">×</a>
-                                <h3>Bienvenido</h3>
-                            </header>
-                            <div class="modal-body">
-                                <p>Gracias por registrarse en nuestra página web Menú Express.</p>
-                            </div>
-                            <footer><a href="#" class="js-modal-close btnAhref">Cerrar</a></footer>
-                        </div>
+<h1 style="margin:0px 20px 10px;">Regístrate</h1>
+<hr>
+<div style="margin: 15px 30px 0px 30px;">
+    <div style="width:635px;margin:0 auto;">
+        <h2>Datos personales</h2>
+    </div>
+    <div id="dialogo" class="modal-box">
+        <header style="width:303px;">
+            <a href="#" class="js-modal-close close">×</a>
+                <h3>Bienvenido</h3>
+        </header>
+        <div class="modal-body">
+            <p>Gracias por registrarse en nuestra página web Menú Express.</p>
+        </div>
+        <footer><a href="#" class="js-modal-close btnAhref">Cerrar</a></footer>
+    </div>
                         <form>
-                            <div class="carFot">
+                            <div>
                                 <div>
                                     <a href="#">
                                         <img src="img/avatar.jpg" width="100%">
@@ -43,7 +25,7 @@
                                     <input type="button" name="" value="Cargar Foto"/>
                                 </div>
                             </div>
-                            <div class="regUsu">
+                            <div>
                                 <table width="100%" cellspacing="15">
                                     <tr>
                                         <td width="15%">
@@ -107,26 +89,46 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="divDia">
-                                <table width="40%" style="margin:auto;">
-                                    <tr>
-                                        <td width="120px" height="35px" align="right">
-                                            <a href="#" class="js-open-modal btnAhref" data-modal-id="dialogo">Grabar</a>
-                                        </td>
-                                        <td width="10%"> </td>
-                                        <td width="120px" height="35px" align="right">
-                                            <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
-                                        </td>
-                                    </tr>
-                                    <tr height="20">
-                                        <td> </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div style="margin-bottom: 10px;">
+            <table width="40%" style="margin:auto;">
+                <tr>
+                    <td width="120px" height="35px" align="right">
+                        <a href="#" class="js-open-modal botonahref" data-modal-id="dialogo" style="width: 100px;">Grabar</a>
+                    </td>
+                    <td width="10%"> </td>
+                    <td width="120px" height="35px" align="right">
+                        <input type="button" name="" value="Limpiar" onclick="clearForm(this.form);"/>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </body>
-</html>
+    </form>
+</div>
+<script>
+    $(function(){
+        var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
+        $('a[data-modal-id]').click(function(e) {
+    		e.preventDefault();
+            $("body").append(appendthis);
+            $(".modal-overlay").fadeTo(500, 0.7);
+            //$(".js-modalbox").fadeIn(500);
+        	var modalBox = $(this).attr('data-modal-id');
+        	$('#'+modalBox).fadeIn($(this).data());
+        });  
+        	
+        $(".js-modal-close, .modal-overlay").click(function() {
+            $(".modal-box, .modal-overlay").fadeOut(500, function() {
+                $(".modal-overlay").remove();
+            });
+        });
+        
+        $(window).resize(function() {
+            $(".modal-box").css({
+                top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+                left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+            });
+        });
+        
+        $(window).resize();
+    });
+</script>

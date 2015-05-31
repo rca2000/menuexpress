@@ -32,7 +32,7 @@ header {
 }
 footer {
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 0px;
 }
 footer ul {
     font-size: 12px;
@@ -56,6 +56,15 @@ footer ul li a:hover {
 .container {
     margin: 0px;
     width: 960px;
+}
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
 }
 hr {
     height: 1px;
@@ -123,6 +132,19 @@ select {
 input[type="checkbox"] {
     float:left;
     margin: 0px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+textarea {
+    width: 335px;
+    background: #FFF none repeat scroll 0% 0%;
+    border: 1px solid #799839;
+    border-radius: 5px;
+    padding: 0px 4px;
 }
 .botonahref {
     cursor: pointer;
