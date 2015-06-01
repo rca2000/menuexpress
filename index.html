@@ -11,26 +11,53 @@
             {
                 $(div).load(desde);
             }
+            
+            $(function(){
+                var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
+                $('a[data-modal-id]').click(function(e) {
+            		e.preventDefault();
+                    $("body").append(appendthis);
+                    $(".modal-overlay").fadeTo(500, 0.7);
+                    //$(".js-modalbox").fadeIn(500);
+                	var modalBox = $(this).attr('data-modal-id');
+                	$('#'+modalBox).fadeIn($(this).data());
+                });  
+                	
+                $(".js-modal-close, .modal-overlay").click(function() {
+                    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+                        $(".modal-overlay").remove();
+                    });
+                });
+                
+                $(window).resize(function() {
+                    $(".modal-box").css({
+                        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+                        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+                    });
+                });
+                
+                $(window).resize();
+            });
         </script>
     </head>
     <body onload="cargar('#cuerpo', 'inicio.html')">
         <header>
-            <nav class="menuprincipal">
-                <div class="conPerfil">
-                    <a href="#" onclick="cargar('#cuerpo', 'perfil.html')" style="margin: 10px 40px 0px 0px">
-                        >> Mi perfil
+            <nav>
+                <div class="linkusuario">
+                    <a href="#" onclick="cargar('#cuerpo', 'perfil.html')">
+                        >> Nombre Usuario
                     </a>
                 </div>
                 <ul>
                     <li><a href="#" onclick="cargar('#cuerpo', 'inicio.html')">INICIO</a></li>
                     <li><a href="#" onclick="cargar('#cuerpo', 'nosotros.html')">NOSOTROS</a></li>
-                    <li class="logo"><a href="#" onclick="cargar('#cuerpo', 'inicio.html')"><img src="img/logo.png"></a></li>
+                    <li style="margin-top: 10px;"><a href="#" onclick="cargar('#cuerpo', 'inicio.html')"><img src="img/logo.png"></a></li>
                     <li><a href="#" onclick="cargar('#cuerpo', 'servicio.html')">SERVICIO</a></a></li>
                     <li><a href="#" onclick="cargar('#cuerpo', 'contactenos.html')">CONTACTENOS</a></a></li>
                 </ul>
             </nav>
         </header>
-        <div class="container">
+        <div class="contenedor">
             <div class="ladoizquierdo">
                 <form>
                     <label for="">DEPARTAMENTO</label>
@@ -60,15 +87,14 @@
                 </form>
             </div>
             <div id="cuerpo" class="cuerpo"></div>
-        </div>
-        <footer>
+        <div class="footer">
             <ul>
-                <hr>
                 <li style="margin-top: 10px;"><a href="#" onclick="cargar('#cuerpo', 'inicio.html')">Inicio</a></li>
                 <li style="margin-top: 10px;"><a href="#" onclick="cargar('#cuerpo', 'nosotros.html')">Nosotros</a></li>
                 <li style="margin-top: 10px;"><a href="#" onclick="cargar('#cuerpo', 'servicio.html')">Servicio</a></a></li>
                 <li style="margin-top: 10px;"><a href="#" onclick="cargar('#cuerpo', 'contactenos.html')">Contáctenos</a></a></li>
             </ul>
-        </footer>
+        </div>
+        </div>
     </body>
 </html>
