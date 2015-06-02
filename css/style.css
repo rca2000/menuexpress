@@ -679,3 +679,58 @@ a.close:hover {
     top: 0px;
     opacity: inherit;
 }
+/*Login*/
+.login-box {
+    display: block;
+    width: 350px;
+    background:#e8e8e8;
+    border: 1px solid #dadada;
+    border-bottom: 1px solid #aaa;
+	/*para Firefox*/
+	-moz-border-radius: 9px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 9px;
+	/*para Opera IE*/
+    border-radius: 9px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-clip: padding-box;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+.login-box header, .login-box .login-header {
+    padding: 1em 1.5em;
+    border-bottom: 1px solid #ddd;
+    background: #799839;
+    color: #FFFFFF;
+}
+.login-box header h3 {
+    margin: 0;
+}
+.login-box .login-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.login-box footer {
+    padding: 5px 10px 5px 230px;
+    border-top: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.login-box footer input[type="button"] {
+  cursor: pointer;
+  background: #F48329;
+  border: 1px solid #D2640C;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  width: 100px;
+  height: 25px;
+}
+
+.login-box footer input[type="button"]:hover {
+    background: #D2640C;
+}
