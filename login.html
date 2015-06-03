@@ -40,10 +40,17 @@
             });
         </script>
     </head>
-    <body>
+    <body onload="cargar('#cuerpo', 'inicio.html')">
+        <header>
+            <nav>
+                <div style="padding-top: 10px;padding-bottom: 10px;">
+                    <img src="img/logo.png">
+                </div>
+            </nav>
+        </header>
         <div class="login-box">
             <header style="width: 303px;height: 15px;">
-                <h3>Menú Express: Login</h3>
+                <h3>Menú Express - Login</h3>
             </header>
             <div class="login-body">
                 <table cellspacing="10">
@@ -66,7 +73,7 @@
                 </table>
             </div>
             <footer>
-                <input type="button" name="" value="Ingresar" onclick="'admin.html'"/>
+                <input type="button" name="" value="Ingresar" onclick="location.href='admin.html'"/>
             </footer>
         </div>
     </body>

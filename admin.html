@@ -40,46 +40,34 @@
             });
         </script>
     </head>
-    <body onload="cargar('#cuerpo', 'inicio.html')">
+    <body onload="cargar('#cuerpo', 'administrador-local.html')">
         <header>
             <nav>
-                <div class="linkusuario">
-                    <a href="#" onclick="cargar('#cuerpo', 'perfil.html')">
-                        >> Nombre Usuario
-                    </a>
-                </div>
-                <div>
+                <div style="padding-top: 10px;padding-bottom: 10px;">
                     <img src="img/logo.png">
                 </div>
             </nav>
         </header>
-        <div class="login-box">
-            <header style="width: 303px;height: 15px;">
-                <h3>Menú Express: Login</h3>
-            </header>
-            <div class="login-body">
-                <table cellspacing="10">
-                    <tr>
-                        <td>
-                            <label for="">Usuario</label>
-                        </td>
-                        <td>
-                            <input type="text" style="width: 160px;" name="" value=""/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="">Contraseña</label>
-                        </td>
-                        <td>
-                            <input type="text" style="width: 160px;" name="" value=""/>
-                        </td>
-                    </tr>
-                </table>
+        <div class="contenedor">
+            <div class="ladoizquierdo">
+                <h3 style="margin-left: 10px;height: 5px;">PANEL DE CONTROL</h3>
+                <div class="marcomenu">
+                    <div id="navigation">
+                        <ul class="top-level">
+                            <li><a href="#" onclick="cargar('#cuerpo', 'administrador-local.html')">Administrar Local</a></li>
+                            <li><a href="#" onclick="cargar('#cuerpo', 'registro-menu.html')">Registro Menú</a></li>
+                            <li><a href="#">Pedidos del Día</a></li>
+                            <li><a href="#">Historial de Pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <footer>
-                <input type="button" name="" value="Ingresar"/>
-            </footer>
+            <div id="cuerpo" class="cuerpo"></div>
+            <div class="footer">
+                <ul>
+                    <li style="margin-top: 10px;">Derechos reservados</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

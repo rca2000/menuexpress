@@ -720,17 +720,65 @@ a.close:hover {
 }
 
 .login-box footer input[type="button"] {
-  cursor: pointer;
-  background: #F48329;
-  border: 1px solid #D2640C;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  width: 100px;
-  height: 25px;
+    cursor: pointer;
+    background: #F48329;
+    border: 1px solid #D2640C;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    height: 25px;
 }
-
 .login-box footer input[type="button"]:hover {
     background: #D2640C;
+}
+/*Adminitrador Menú*/
+#navigation {
+    font-size: 14px;
+    width: 150px;
+}
+#navigation ul {
+    margin: 0px;
+    padding: 0px;
+}
+#navigation li {
+    list-style: none;
+} 
+ul.top-level li {
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #F48329;
+}
+#navigation a {
+    transition: all .5s ease-out 0s;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 10px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+}
+#navigation a:hover {
+    text-decoration: none;
+}
+#navigation li:hover {
+    background: #D2640C;
+    transition: all .5s ease-out 0s;
+    position: relative;
+}
+.ladoizquierdo .marcomenu {
+    background: #54671E;
+	/*para Firefox*/
+	-moz-border-radius: 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px;
+	/*para Opera IE*/
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
 }
