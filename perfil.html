@@ -76,7 +76,7 @@
                                                 <label class="label" for="">Contraseña</label>
                                             </td>     
                                             <td width="85%">
-                                                <input class="inputtext" size="30" type="text" name="" value="" style="width:150px;"/>
+                                                <input class="inputtext" size="30" type="password" name="" value="" style="width:150px;"/>
                                             </td> 
                                         </tr>
                                         <tr>
@@ -84,7 +84,7 @@
                                                 <label class="label" for="">Confirmar contraseña</label>
                                             </td>     
                                             <td width="85%">
-                                                <input class="inputtext" size="30" type="text" name="" value="" style="width:150px;"/>
+                                                <input class="inputtext" size="30" type="password" name="" value="" style="width:150px;"/>
                                             </td>
                                         </tr>
                                     </table>
@@ -212,13 +212,13 @@
                                     <p>Fecha Inicial</p>
                                 </td>
                                 <td>
-                                    <input class="inputtext" size="30" type="text" name="" value="" style="width:100px;"/>
+                                    <input class="inputtext" size="30" type="date" name="" id="fechainicial" style="width:130px;"/>
                                 </td>
                                 <td>
                                     <p>Fecha Final</p>
                                 </td>
                                 <td>
-                                    <input class="inputtext" size="30" type="text" name="" value="" style="width:100px;"/>
+                                    <input class="inputtext" size="30" type="date" name="" id="fechafinal" style="width:130px;"/>
                                 </td>
                             </tr>
                             <tr>
@@ -306,4 +306,17 @@
         
         $(window).resize();
     });
+</script>
+<script id="jsbin-javascript">
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if (month < 10)
+        month = "0" + month;
+    if (day < 10)
+        day = "0" + day;
+    var today = year + "-" + month + "-" + day;
+    $("#fechainicial").attr("value", today);
+    $("#fechafinal").attr("value", today);
 </script>

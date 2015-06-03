@@ -1,6 +1,6 @@
 <h1 style="margin:0px 20px 10px;">Registro de menú</h1>
 <hr>
-<div class="bloque noborde" style="margin: 15px 50px 10px 50px;">
+<div style="margin: 15px 50px 10px 50px;">
     <div id="dialogo" class="modal-box" style="top: 339px; left: 382px;">
         <header style="width:303px;">
             <a href="#" class="js-modal-close close">×</a>
@@ -15,11 +15,7 @@
         <tr>
             <td><label for="">Fecha</label></td>     
             <td>
-                <select style="width: 210px;">
-                <option>Selecciona distrito</option>
-                <option>San Isidro</option>
-                <option>La Victoria</option>
-                </select>
+                 <input type="date" style="width: 130px;" name="" id="fechaactual"/>
             </td>     
         </tr>
     </table>
@@ -117,4 +113,16 @@
         
         $(window).resize();
     });
+</script>
+<script id="jsbin-javascript">
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if (month < 10)
+        month = "0" + month;
+    if (day < 10)
+        day = "0" + day;
+    var today = year + "-" + month + "-" + day;
+    $("#fechaactual").attr("value", today);
 </script>

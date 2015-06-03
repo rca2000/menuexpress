@@ -65,6 +65,78 @@
         </div>
     </form>
 </div>
+
+
+
+<section>
+    <div>
+        <div>
+            <div></div>
+            <script type="text/javascript">
+                var z = document.createElement("script");
+                z.type = "text/javascript";
+                z.async = true;
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(z, s);
+            </script>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <article>
+            <span id="status">Localizando...</span>
+        </article>
+    <script>
+        function success(position) {
+            var s = document.querySelector('#status');
+            if (s.className == 'success') {
+                return;
+            }
+            s.innerHTML = "Se encuentra aqui!";
+            s.className = 'success';
+            var mapcanvas = document.createElement('div');
+            mapcanvas.id = 'mapcanvas';
+            mapcanvas.style.height = '400px';
+            mapcanvas.style.width = '560px';
+            document.querySelector('article').appendChild(mapcanvas);
+            var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var myOptions = {
+                zoom: 15,
+                center: latlng,
+                mapTypeControl: false,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+            var marker = new google.maps.Marker({
+                  position: latlng, 
+                  map: map, 
+                  title:"Usted está aquí! (al menos dentro de una "+position.coords.accuracy+" radios de metros)"
+            });
+        }
+        function error(msg) {
+            var s = document.querySelector('#status');
+            s.innerHTML = typeof msg == 'string' ? msg : "failed";
+            s.className = 'fail';
+        }
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, error);
+        } else {
+            error('not supported');
+        }
+    </script>
+</section>
+<script>
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+    try {
+        var pageTracker = _gat._getTracker("UA-1656750-18");
+        pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+
+
 <script>
     $(function(){
         var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
@@ -93,3 +165,4 @@
         $(window).resize();
     });
 </script>
+
