@@ -296,14 +296,15 @@ textarea {
 }
 /*Link Usuario*/
 .linkusuario {
-    position: relative;
-    right: 30px;
-    top: 15px;
-    z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 830px;
+  text-align: right;
+  padding: 15px 50px;;
 }
 .linkusuario a {
     color: #fff;
-    float: right;
     text-decoration: none;
 }
 /*Dialogo Modal*/
