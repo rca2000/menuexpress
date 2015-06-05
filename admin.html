@@ -5,6 +5,7 @@
         <title>MENÚ EXPRESS</title>
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/clearform.js"></script>
         <script type="text/javascript">
             function cargar(div, desde)
@@ -56,11 +57,12 @@
                         <ul class="top-level">
                             <li><a href="#" onclick="cargar('#cuerpo', 'administrador-local.html')">Administrar Local</a></li>
                             <li><a href="#" onclick="cargar('#cuerpo', 'registro-menu.html')">Registro Menú</a></li>
-                            <li><a href="#">Pedidos del Día</a></li>
-                            <li><a href="#">Historial de Pedidos</a></li>
+                            <li><a href="#" onclick="cargar('#cuerpo', 'pedido-del-dia.html')">Pedidos del Día</a></li>
+                            <li><a href="#" onclick="cargar('#cuerpo', 'historial-pedido.html')">Historial de Pedidos</a></li>
                         </ul>
                     </div>
                 </div>
+                <div id="calendar"></div>
             </div>
             <div id="cuerpo" class="cuerpo"></div>
             <div class="footer">
@@ -69,5 +71,14 @@
                 </ul>
             </div>
         </div>
+        <script src="js/jquery-ui-datepicker.min.js"></script>
+        <script>
+        	$('#calendar').datepicker({
+        		inline: true,
+        		firstDay: 1,
+        		showOtherMonths: true,
+        		dayNamesMin: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab']
+        	});
+        </script>
     </body>
 </html>

@@ -1,3 +1,41 @@
+<script>
+    var doc=document.getElementById("localizacion");
+    function getLocation()
+    {
+        if (navigator.geolocation)
+        {
+            navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }
+    }
+
+    function showPosition(position)
+    {
+        var latlon=position.coords.latitude+","+position.coords.longitude;
+
+        var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+        +latlon+"&zoom=14&size=400x300&sensor=false";
+        document.getElementById("map").innerHTML="<img src='"+img_url+"'>";
+    }
+
+    function showError(error)
+    {
+        switch(error.code) 
+        {
+        case error.PERMISSION_DENIED:
+            doc.innerHTML="Request for Geolocation denied by the user."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            doc.innerHTML="Unavailable location information."
+            break;
+        case error.TIMEOUT:
+            doc.innerHTML="Location request timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            doc.innerHTML="UNKNOWN_ERROR."
+            break;
+        }
+    }
+</script>
 <h1 style="margin:0px 20px 10px;">Contáctenos</h1>
 <hr>
 <div>
@@ -64,79 +102,9 @@
             </div>
         </div>
     </form>
+    <input type="button" name="" style="width: 150px;margin-left: 150px;" value="Mostrar ubicación" onclick="getLocation()"/>
+    <div id="map" style="padding-bottom: 15px;"></div>
 </div>
-
-
-
-<section>
-    <div>
-        <div>
-            <div></div>
-            <script type="text/javascript">
-                var z = document.createElement("script");
-                z.type = "text/javascript";
-                z.async = true;
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(z, s);
-            </script>
-        </div>
-    </div>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <article>
-            <span id="status">Localizando...</span>
-        </article>
-    <script>
-        function success(position) {
-            var s = document.querySelector('#status');
-            if (s.className == 'success') {
-                return;
-            }
-            s.innerHTML = "Se encuentra aqui!";
-            s.className = 'success';
-            var mapcanvas = document.createElement('div');
-            mapcanvas.id = 'mapcanvas';
-            mapcanvas.style.height = '400px';
-            mapcanvas.style.width = '560px';
-            document.querySelector('article').appendChild(mapcanvas);
-            var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-            var myOptions = {
-                zoom: 15,
-                center: latlng,
-                mapTypeControl: false,
-                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
-            var marker = new google.maps.Marker({
-                  position: latlng, 
-                  map: map, 
-                  title:"Usted está aquí! (al menos dentro de una "+position.coords.accuracy+" radios de metros)"
-            });
-        }
-        function error(msg) {
-            var s = document.querySelector('#status');
-            s.innerHTML = typeof msg == 'string' ? msg : "failed";
-            s.className = 'fail';
-        }
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(success, error);
-        } else {
-            error('not supported');
-        }
-    </script>
-</section>
-<script>
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script>
-    try {
-        var pageTracker = _gat._getTracker("UA-1656750-18");
-        pageTracker._trackPageview();
-    } catch(err) {}
-</script>
-
-
 <script>
     $(function(){
         var appendthis = ("<div class='modal-overlay js-modal-close'></div>");
